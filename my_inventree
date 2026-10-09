@@ -1,0 +1,19 @@
+from nornir import InitNornir
+
+# Initialize Nornir with your configuration file
+nr = InitNornir(config_file="config.yaml")
+
+# Loop through the parsed yaml inventory to verify it works
+for name, host in nr.inventory.hosts.items():
+    print(f"Device Name: {name}")
+    print(f"  └── IP Address: {host.hostname}")
+    print(f"  └── Connection User: {host.username}")
+    print(f"  └── Ansible Port: {host.port}")
+    print(f"  --- Ansible OS: {host.platform}")
+    print("-" * 40)
+
+
+"""
+for name, host in nr.inventory.hosts.items():
+	print(f"Host: {name} -> IP: {host.hostname} User: {host.username}")
+"""

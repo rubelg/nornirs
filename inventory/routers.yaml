@@ -1,0 +1,42 @@
+---
+all:
+  children:
+    lab1:
+      hosts:
+        vmx1:
+          ansible_host: 192.168.216.201
+        vmx2:
+          ansible_host: 192.168.216.202
+        vmx3:
+          ansible_host: 192.168.216.203
+        vmx4:
+          ansible_host: 192.168.216.204
+    iap:
+      hosts:
+        vmx5: 
+          ansible_host: 192.168.216.205
+        vmx6: 
+          ansible_host: 192.168.216.206
+        vmx7:
+          ansible_host: 192.168.216.207
+        vmx8:
+          ansible_host: 192.168.216.208
+    vjunos:
+      hosts:
+        vjunos-rtr2:
+          ansible_host: 192.168.216.112
+        vjunos-rtr1:
+          ansible_host: 192.168.216.111
+        vjunos-rtr3:
+          ansible_host: 192.168.216.113
+        vjunos-rtr4:
+          ansible_host: 192.168.216.114
+  vars:
+    ansible_user: grubel
+    ansible_password: Newton!!
+    ansible_port: 22
+    platform: junos   
+# ansible_ssh_private_key_file: /home/grubel/.ssh/redhat
+#    ansible_ssh_user: redhat
+#    ansible_user: redhat
+#    ansible_user: grubel

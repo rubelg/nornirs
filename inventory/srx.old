@@ -1,0 +1,15 @@
+---
+all:
+  children:
+    lab1:
+      hosts:
+        vsrx1:
+          ansible_host: 192.168.216.11
+        vsrx2:
+          ansible_host: 192.168.216.12
+
+  vars:
+    ansible_user: grubel
+    ansible_password: Newton!!
+    ansible_port: 22
+    platform: junos
