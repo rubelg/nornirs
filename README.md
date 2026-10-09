@@ -13,7 +13,8 @@ Nornir normally operates on a set of required files show below:
 └── run_script.py        # Your Python execution script
 ```
 
-However if you use an ansible style inventory and ansible-vault, the file struction is this:
+Using an Ansible style inventree allows you to configure the hosts and groups in one file.
+When using an ansible style inventory and ansible-vault, the file structure is this:
 
 ```text
 ├── config.yaml
