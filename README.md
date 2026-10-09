@@ -18,10 +18,15 @@ However if you use an ansible style inventory and ansible-vault, the file struct
 ```text
 ├── config.yaml
 ├── inventory
+│   ├── group_vars
+│   │   ├── aes256
+│   │   └── all.vault
 │   ├── routers.yaml
 │   ├── srx.ini
 │   └── srx.old
 ├── my_inventory.py
 ├── my_inventree
+├── my_vault.py
 ├── nornir.log
+└── README.md
 ```
