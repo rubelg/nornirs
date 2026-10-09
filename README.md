@@ -1,6 +1,6 @@
 # nornir
 
-This repo is a python nornir structure using ansible inventory files
+This repo is a python nornir structure using ansible inventory files and ansible vault
 
 Nornir normally operates on a set of required files show below:
 
