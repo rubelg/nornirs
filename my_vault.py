@@ -22,9 +22,9 @@ import os
 import sys
 import yaml
 from pathlib import Path
-from ansible.constraints import DEFAULT_VAULT_ID_MATCH
+from ansible.constants import DEFAULT_VAULT_ID_MATCH
 from ansible.utils.display import Display
-from ansible.parsing.vault VaultLib, VaultSecret
+from ansible.parsing.vault import VaultLib, VaultSecret
 
 #1. Dynamically find the base directory
 BASE_DIR = Path(__file__).resolve().parent
