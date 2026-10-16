@@ -167,3 +167,5 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: Running:show bgp summary (fa
 2026-10-16 14:49:13,162 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts
 2026-10-16 14:49:31,030 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
 2026-10-16 14:49:31,111 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts
+2026-10-16 15:12:45,371 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 15:12:45,454 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 1 hosts
