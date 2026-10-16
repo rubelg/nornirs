@@ -1,1 +1,2 @@
 show bgp summary
+show bgp neighbor
