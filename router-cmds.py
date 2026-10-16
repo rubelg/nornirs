@@ -166,7 +166,7 @@ def run_juniper_show_cmds(task, commands):
             lines2 = post_path.splitlines(keepends=True)
 
             print(f"\n!!! Diff precheck and postcheck files !!!\n")
-            diff = difflib(
+            diff = difflib.unified_diff(
                 lines1,
                 lines2,
                 fromfile='Variable 1 Content',
