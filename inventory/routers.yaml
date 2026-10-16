@@ -32,7 +32,7 @@ all:
         vjunos-rtr4:
           ansible_host: 192.168.216.114
   vars:
-    #ansible_user: grubel
+    #ansible_user: user
     #ansible_password: password$123
     ansible_port: 22
     platform: junos   
