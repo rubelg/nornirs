@@ -2,3 +2,168 @@
 2026-10-16 13:35:11,266 -  nornir.core -  WARNING -        run() - Task 'run_juniper_show_cmds' has not been run – 0 hosts selected
 2026-10-16 13:35:18,493 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
 2026-10-16 13:35:18,570 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts
+2026-10-16 13:49:17,289 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
+2026-10-16 13:49:17,369 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts
+2026-10-16 13:49:30,093 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
+2026-10-16 13:49:30,168 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts
+2026-10-16 13:49:30,934 - nornir.core.task -    ERROR -      start() - Host 'vmx8': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:49:30,971 - nornir.core.task -    ERROR -      start() - Host 'vmx5': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:49:31,014 - nornir.core.task -    ERROR -      start() - Host 'vmx7': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:49:31,015 - nornir.core.task -    ERROR -      start() - Host 'vmx6': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:49:41,355 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:49:41,434 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 1 hosts
+2026-10-16 13:49:42,256 - nornir.core.task -    ERROR -      start() - Host 'vmx5': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:50:01,058 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:50:01,135 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 1 hosts
+2026-10-16 13:50:02,087 - nornir.core.task -    ERROR -      start() - Host 'vmx5': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:52:08,869 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:52:08,949 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary']} on 1 hosts
+2026-10-16 13:52:10,042 - nornir.core.task -    ERROR -      start() - Host 'vmx5': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:53:05,153 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:53:05,237 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary']} on 1 hosts
+2026-10-16 13:53:15,113 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:53:15,192 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary']} on 1 hosts
+2026-10-16 13:53:15,966 - nornir.core.task -    ERROR -      start() - Host 'vmx5': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 169, in run_juniper_show_cmds
+    diff = difflib(
+           ^^^^^^^^
+TypeError: 'module' object is not callable
+
+2026-10-16 13:55:26,292 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:55:26,378 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary']} on 1 hosts
+2026-10-16 13:57:47,144 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:57:47,226 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 1 hosts
+2026-10-16 13:58:01,551 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5']
+2026-10-16 13:58:01,630 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 1 hosts
+2026-10-16 14:48:36,554 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts []
+2026-10-16 14:48:36,631 -  nornir.core -  WARNING -        run() - Task 'run_juniper_show_cmds' has not been run – 0 hosts selected
+2026-10-16 14:48:43,191 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
+2026-10-16 14:48:43,270 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts
+2026-10-16 14:48:53,285 - nornir.core.task -    ERROR -      start() - Host 'vmx5': task 'Running:show bgp summary' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/netmiko/base_connection.py", line 1153, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/grubel/venv/lib64/python3.12/site-packages/paramiko/client.py", line 364, in connect
+    sock.connect(addr)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/inventory.py", line 474, in get_connection
+    self.open_connection(
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/inventory.py", line 526, in open_connection
+    conn_obj.open(
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/venv/lib64/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 516, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/venv/lib64/python3.12/site-packages/netmiko/base_connection.py", line 491, in __init__
+    self._open()
+  File "/home/grubel/venv/lib64/python3.12/site-packages/netmiko/base_connection.py", line 509, in _open
+    self.establish_connection()
+  File "/home/grubel/venv/lib64/python3.12/site-packages/netmiko/base_connection.py", line 1175, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: juniper_junos 192.168.216.205:22
+
+
+
+2026-10-16 14:48:53,286 - nornir.core.task -    ERROR -      start() - Host 'vmx5': task 'run_juniper_show_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 102, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/grubel/rockyshare/nornirs/router-cmds.py", line 133, in run_juniper_show_cmds
+    output = task.run(
+             ^^^^^^^^^
+  File "/home/grubel/venv/lib64/python3.12/site-packages/nornir/core/task.py", line 177, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Running:show bgp summary (failed)
+
+
+2026-10-16 14:49:13,082 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
+2026-10-16 14:49:13,162 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts
+2026-10-16 14:49:31,030 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
+2026-10-16 14:49:31,111 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts

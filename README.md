@@ -1,4 +1,5 @@
 # nornir
+Update 10-16-2026
 
 This repo is a python nornir structure using ansible inventory files and ansible vault
 
