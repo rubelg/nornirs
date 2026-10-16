@@ -1,0 +1,4 @@
+2026-10-16 13:35:11,185 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts []
+2026-10-16 13:35:11,266 -  nornir.core -  WARNING -        run() - Task 'run_juniper_show_cmds' has not been run – 0 hosts selected
+2026-10-16 13:35:18,493 -       nornir -     INFO -       main() -  ---> router-cmds.py started by: grubel against hosts ['vmx5', 'vmx6', 'vmx7', 'vmx8']
+2026-10-16 13:35:18,570 -  nornir.core -     INFO -        run() - Running task 'run_juniper_show_cmds' with args {'commands': ['show bgp summary', 'show bgp neighbor']} on 4 hosts

@@ -1,0 +1,368 @@
+
+--->show bgp summary
+Threading mode: BGP I/O
+Default eBGP mode: advertise - accept, receive - accept
+Groups: 6 Peers: 8 Down peers: 0
+Table          Tot Paths  Act Paths Suppressed    History Damp State    Pending
+inet.0               
+                      19         13          0          0          0          0
+Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+4.5.5.5                   5        225        225       0       0     1:40:14 Establ
+  inet.0: 2/2/2/0
+4.5.5.6                   5        227        225       0       0     1:40:25 Establ
+  inet.0: 3/3/3/0
+4.5.5.7                   5        227        222       0       0     1:39:57 Establ
+  inet.0: 3/3/3/0
+4.9.8.2                   8        226        222       0       0     1:40:38 Establ
+  inet.0: 1/4/4/0
+4.9.8.6                   8        225        222       0       0     1:40:38 Establ
+  inet.0: 1/4/1/0
+4.128.8.1              3356        225        226       0       0     1:40:29 Establ
+  inet.0: 1/1/1/0
+4.128.8.129           65505        227        226       0       0     1:40:35 Establ
+  inet.0: 1/1/1/0
+4.128.8.133           65505        227        221       0       0     1:40:39 Establ
+  inet.0: 1/1/1/0
+
+--->show bgp neighbor
+Peer: 4.5.5.5+179 AS 5         Local: 4.5.5.8+58912 AS 5    
+  Group: AS5                   Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: Internal    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ export-2nd-loopback export-iap-peers ] Import: [ import-iap-peers ]
+  Options: <LocalAddress LogUpDown AddressFamily PeerAS Rib-group Refresh>
+  Options: <GracefulShutdownRcv>
+  Address families configured: inet-unicast
+  Local Address: 4.5.5.8 Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.5.5.5         Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 0    Peer index: 1    SNMP index: 0     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 5)
+  Peer does not support Addpath
+  NLRI(s) enabled for color nexthop resolution: inet-unicast
+  Table inet.0 Bit: 80005
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              2
+    Received prefixes:            2
+    Accepted prefixes:            2
+    Suppressed due to damping:    0
+    Advertised prefixes:          3
+  Last traffic (seconds): Received 24   Sent 3    Checked 6014
+  Input messages:  Total 225	Updates 7	Refreshes 0	Octets 4498
+  Output messages: Total 225	Updates 5	Refreshes 0	Octets 4478
+  Output Queue[7]: 0            (inet.0, inet-unicast)
+Peer: 4.5.5.6+63682 AS 5       Local: 4.5.5.8+179 AS 5    
+  Group: AS5                   Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: Internal    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ export-2nd-loopback export-iap-peers ] Import: [ import-iap-peers ]
+  Options: <LocalAddress LogUpDown AddressFamily PeerAS Rib-group Refresh>
+  Options: <GracefulShutdownRcv>
+  Address families configured: inet-unicast
+  Local Address: 4.5.5.8 Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.5.5.6         Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 0    Peer index: 0    SNMP index: 1     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 5)
+  Peer does not support Addpath
+  NLRI(s) enabled for color nexthop resolution: inet-unicast
+  Table inet.0 Bit: 80005
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              3
+    Received prefixes:            3
+    Accepted prefixes:            3
+    Suppressed due to damping:    0
+    Advertised prefixes:          3
+  Last traffic (seconds): Received 5    Sent 4    Checked 6026
+  Input messages:  Total 227	Updates 6	Refreshes 0	Octets 4560
+  Output messages: Total 225	Updates 5	Refreshes 0	Octets 4478
+  Output Queue[7]: 0            (inet.0, inet-unicast)
+Peer: 4.5.5.7+179 AS 5         Local: 4.5.5.8+58916 AS 5    
+  Group: AS5                   Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: Internal    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ export-2nd-loopback export-iap-peers ] Import: [ import-iap-peers ]
+  Options: <LocalAddress LogUpDown AddressFamily PeerAS Rib-group Refresh>
+  Options: <GracefulShutdownRcv>
+  Address families configured: inet-unicast
+  Local Address: 4.5.5.8 Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.5.5.7         Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 0    Peer index: 2    SNMP index: 2     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 5)
+  Peer does not support Addpath
+  NLRI(s) enabled for color nexthop resolution: inet-unicast
+  Table inet.0 Bit: 80005
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              3
+    Received prefixes:            3
+    Accepted prefixes:            3
+    Suppressed due to damping:    0
+    Advertised prefixes:          3
+  Last traffic (seconds): Received 8    Sent 8    Checked 5997
+  Input messages:  Total 227	Updates 8	Refreshes 0	Octets 4591
+  Output messages: Total 222	Updates 3	Refreshes 0	Octets 4346
+  Output Queue[7]: 0            (inet.0, inet-unicast)
+Peer: 4.9.8.2+58889 AS 8       Local: 4.9.8.1+179 AS 5    
+  Group: PE81_AS8_foghorn      Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: External    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ default-route ] Import: [ tag1000 import-pe1 ]
+  Options: <LogUpDown PeerAS Refresh>
+  Options: <GracefulShutdownRcv>
+  Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.9.8.2         Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 2    Peer index: 0    SNMP index: 4     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  Local Interface: ge-0/0/7.81                      
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 8)
+  Peer does not support Addpath
+  Table inet.0 Bit: 80002
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              1
+    Received prefixes:            4
+    Accepted prefixes:            4
+    Suppressed due to damping:    0
+    Advertised prefixes:          1
+  Last traffic (seconds): Received 11   Sent 18   Checked 6038
+  Input messages:  Total 226	Updates 5	Refreshes 0	Octets 4535
+  Output messages: Total 222	Updates 1	Refreshes 0	Octets 4247
+  Output Queue[7]: 0            (inet.0, inet-unicast)
+Peer: 4.9.8.6+179 AS 8         Local: 4.9.8.5+58890 AS 5    
+  Group: PE81_AS8_leghorn      Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: External    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ default-route ] Import: [ tag1000 import-pe1 ]
+  Options: <LogUpDown PeerAS Refresh>
+  Options: <GracefulShutdownRcv>
+  Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.9.8.6         Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 3    Peer index: 0    SNMP index: 5     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  Local Interface: ge-0/0/7.82                      
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 8)
+  Peer does not support Addpath
+  Table inet.0 Bit: 80001
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              1
+    Received prefixes:            4
+    Accepted prefixes:            1
+    Suppressed due to damping:    0
+    Advertised prefixes:          1
+  Last traffic (seconds): Received 12   Sent 13   Checked 6038
+  Input messages:  Total 225	Updates 5	Refreshes 0	Octets 4472
+  Output messages: Total 222	Updates 1	Refreshes 0	Octets 4247
+  Output Queue[7]: 0            (inet.0, inet-unicast)
+Peer: 4.128.8.1+50557 AS 3356  Local: 4.128.8.2+179 AS 5    
+  Group: ISP5                  Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: External    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ export-isp5 ] 
+  Options: <LogUpDown PeerAS Refresh>
+  Options: <GracefulShutdownRcv>
+  Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.255.255.1     Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 1    Peer index: 0    SNMP index: 3     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  Local Interface: ge-0/0/2.8                       
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 3356)
+  Peer does not support Addpath
+  Table inet.0 Bit: 80004
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              1
+    Received prefixes:            1
+    Accepted prefixes:            1
+    Suppressed due to damping:    0
+    Advertised prefixes:          4
+  Last traffic (seconds): Received 6    Sent 9    Checked 6029
+  Input messages:  Total 225	Updates 2	Refreshes 0	Octets 4352
+  Output messages: Total 226	Updates 5	Refreshes 0	Octets 4557
+  Output Queue[7]: 0            (inet.0, inet-unicast)
+Peer: 4.128.8.129+58897 AS 65505 Local: 4.128.8.130+179 AS 5    
+  Group: FW81-INT              Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: External    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ EXPORT-TO-FW81-INT ] 
+  Options: <RemovePrivateAS LogUpDown AddressFamily PeerAS Rib-group Refresh As Override>
+  Options: <GracefulShutdownRcv>
+  Address families configured: inet-unicast
+  Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.128.128.8     Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 4    Peer index: 0    SNMP index: 6     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  Local Interface: lt-0/2/10.241                    
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 65505)
+  Peer does not support Addpath
+  Table inet.0 Bit: 80003
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              1
+    Received prefixes:            1
+    Accepted prefixes:            1
+    Suppressed due to damping:    0
+    Advertised prefixes:          4
+  Last traffic (seconds): Received 4    Sent 10   Checked 6036
+  Input messages:  Total 227	Updates 2	Refreshes 0	Octets 4390
+  Output messages: Total 226	Updates 5	Refreshes 0	Octets 4537
+  Output Queue[7]: 0            (inet.0, inet-unicast)
+Peer: 4.128.8.133+58885 AS 65505 Local: 4.128.8.134+179 AS 5    
+  Group: FW81-EXT              Routing-Instance: master
+  Forwarding routing-instance: master  
+  Type: External    State: Established    Flags: <Sync>
+  Last State: OpenConfirm   Last Event: RecvKeepAlive
+  Last Error: None
+  Export: [ EXPORT-TO-FW81-EXT ] 
+  Options: <LogUpDown AddressFamily PeerAS Rib-group Refresh As Override>
+  Options: <GracefulShutdownRcv>
+  Address families configured: inet-unicast
+  Holdtime: 90 Preference: 170
+  Graceful Shutdown Receiver local-preference: 0
+  Number of flaps: 0
+  Peer ID: 4.128.128.8     Local ID: 4.5.5.8           Active Holdtime: 90
+  Keepalive Interval: 30         Group index: 5    Peer index: 0    SNMP index: 7     
+  I/O Session Thread: bgpio-0 State: Enabled
+  BFD: disabled, down
+  Local Interface: lt-0/2/10.251                    
+  NLRI for restart configured on peer: inet-unicast
+  NLRI advertised by peer: inet-unicast
+  NLRI for this session: inet-unicast
+  Peer supports Refresh capability (2)
+  Stale routes from peer are kept for: 300
+  Peer does not support Restarter functionality
+  Restart flag received from the peer: Notification
+  NLRI that restart is negotiated for: inet-unicast
+  NLRI of received end-of-rib markers: inet-unicast
+  NLRI of all end-of-rib markers sent: inet-unicast
+  Peer does not support LLGR Restarter functionality
+  Peer supports 4 byte AS extension (peer-as 65505)
+  Peer does not support Addpath
+  Table inet.0 Bit: 80000
+    RIB State: BGP restart is complete
+    Send state: in sync
+    Active prefixes:              1
+    Received prefixes:            1
+    Accepted prefixes:            1
+    Suppressed due to damping:    0
+    Advertised prefixes:          1
+  Last traffic (seconds): Received 26   Sent 23   Checked 6040
+  Input messages:  Total 227	Updates 2	Refreshes 0	Octets 4390
+  Output messages: Total 221	Updates 1	Refreshes 0	Octets 4236
+  Output Queue[7]: 0            (inet.0, inet-unicast)
