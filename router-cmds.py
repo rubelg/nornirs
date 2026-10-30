@@ -49,9 +49,14 @@ warnings.filterwarnings("ignore", message=".*distribution.*already load.*")
 
 #Set directory structure for path to save files
 work_dir = os.getcwd()
+cmd_dir = Path("./command_files")
 BACKUP_DIR = "backups"
 REPORT_DIR = "reports"
-cmd_dir = Path("./command_files")
+CURRENT_DIR = Path(__file__).resolve().parent
+MODULE_DIR = CURRENT_DIR / "modules"
+
+print(f"Looking for: {MODULE_DIR}")
+sys.path.insert(0, str(MODULE_DIR))
 
 #Create directories is case they don't exist
 if not os.path.exists(BACKUP_DIR):
