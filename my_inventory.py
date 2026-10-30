@@ -101,7 +101,7 @@ def init_nornir_inventory():
 
     print(f"\nAvailable Hosts:\n {list(nr.inventory.hosts.keys())}\n")
     print(f"Available Groups:\n {list(nr.inventory.groups.keys())}")
-    print("✅ Inventree injected successfully. Starting tasks...")
+    print("✅ Inventory injected successfully. Starting tasks...")
     
     return nr
 
