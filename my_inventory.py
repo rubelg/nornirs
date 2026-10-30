@@ -16,7 +16,7 @@ Import Usage:
 """
 __version__ = "1.0.0"
 
-print(f"\nRead Ansible Inventree files: {__version__}")
+print(f"\nRead Ansible Inventory files: {__version__}")
 
 import types
 import sys
