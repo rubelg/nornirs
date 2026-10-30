@@ -30,8 +30,8 @@ from ansible.parsing.vault import VaultLib, VaultSecret
 BASE_DIR = Path(__file__).resolve().parent
 
 #2. Build explicit path for the project directory
-VAULT_FILE = BASE_DIR / "inventory" / "group_vars" / "all.vault"
-PASSWORD_FILE = BASE_DIR / "inventory" / "group_vars" / "aes256"
+VAULT_FILE = BASE_DIR / "group_vars" / "all.vault"
+PASSWORD_FILE = BASE_DIR / "group_vars" / "aes256"
 
 def read_vault_password(password_file_path):
     if not os.path.exists(password_file_path):
